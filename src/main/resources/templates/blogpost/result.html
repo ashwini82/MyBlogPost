@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <div th:replace="/fragments/styling :: head-style"></div>
+    <link rel="stylesheet" href="webjars/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <title>Tech Talent Blog</title>
+</head>
+ 
+<body>
+    <h3>Blog Post Form</h3>
+    <p>Thank you for your submission</p>
+ 
+    <h4>Blog Post</h4>
+    <p th:text="${title}"></p>
+    <p th:text="${author}"></p>
+    <p th:text="${entry}"></p>
+ 
+ 
+ <div th:replace="/fragments/styling :: body-links"></div>
+ 
+</body>
+ 
+</html>
